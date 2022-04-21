@@ -1,11 +1,11 @@
-# Bitbucket Master Branch Checker
+# Bitbucket Prod Branch Checker
 
-Check if current branch is behind current master by a few commits and prevents exits the pipeline execution if it is.
+Check if current branch is behind current prod by a few commits and prevents exits the pipeline execution if it is.
 
 ## YAML Definition
 
 Add the following snippet to the script section of your `bitbucket-pipelines.yml` file:
 
 ```yaml
-- pipe: docker://mchlbowyer/bitbucket-master-branch-checker
+- pipe: docker://mchlbowyer/bitbucket-prod-branch-checker
 ```
